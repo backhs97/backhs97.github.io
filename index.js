@@ -365,7 +365,6 @@ function typeContactCode() {
     typeChar();
 }
 
-// Contact 섹션이 뷰포트에 들어올 때 애니메이션 시작
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
