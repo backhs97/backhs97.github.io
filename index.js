@@ -160,13 +160,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 currentLineContent += line[currentChar];
                 codeElement.innerHTML = content + currentLineContent + '<span class="cursor">|</span>';
                 currentChar++;
-                setTimeout(typeChar, 3);  // 타이핑 속도 조절
+                setTimeout(typeChar, 3); 
             } else {
                 content += currentLineContent + '\n';
                 currentLineContent = '';
                 currentChar = 0;
                 currentLine++;
-                setTimeout(typeChar, 10);  // 다음 줄로 넘어가는 딜레이
+                setTimeout(typeChar, 10); 
             }
         }
     }
@@ -193,22 +193,18 @@ class TerminalAnimation {
         span.className = className;
         span.textContent = char;
         this.content.appendChild(span);
-        
-        // 커서를 항상 마지막에 위치시킴
+      
         this.cursor.remove();
         this.content.appendChild(this.cursor);
         
-        // 랜덤한 타이핑 딜레이 (실제 타이핑처럼 보이게)
         await new Promise(resolve => {
             setTimeout(resolve, Math.random() * 50 + 30);
         });
     }
 
     async typeCommand(command) {
-        // 프롬프트 표시
         await this.typeCharacter('$ ', 'prompt');
         
-        // 명령어 한 글자씩 타이핑
         for (let char of command) {
             await this.typeCharacter(char, 'command-text');
         }
@@ -221,7 +217,6 @@ class TerminalAnimation {
     async showOutput(output) {
         if (!output) return;
 
-        // 출력 전 살짝 딜레이 (실제 터미널처럼)
         await new Promise(resolve => setTimeout(resolve, 200));
 
         const lines = output.split('\n');
@@ -254,7 +249,6 @@ class TerminalAnimation {
         await this.showOutput(command.output);
         await this.handleLink(command.link);
 
-        // 다음 명령어 실행 전 딜레이
         await new Promise(resolve => setTimeout(resolve, 800));
         
         this.currentLine++;
@@ -316,7 +310,6 @@ const synczoneTerminal = new TerminalAnimation('synczone-terminal', synczoneComm
 autowiseTerminal.start();
 synczoneTerminal.start();
 
-// 커서 이펙트 추가
 document.addEventListener('DOMContentLoaded', function() {
     const cursor = document.createElement('div');
     cursor.classList.add('cursor-effect');
@@ -328,7 +321,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Contact 섹션 타이핑 애니메이션
 const contactLines = [
     '<span class="comment">// Thanks for visiting my portfolio!</span>',
     '<span class="keyword">const</span> message = {',
@@ -344,7 +336,6 @@ const contactLines = [
     '<span class="comment">// Feel free to reach out!</span>'
 ];
 
-// Home 섹션과 동일한 애니메이션 로직 사용
 function typeContactCode() {
     const codeElement = document.getElementById('contact-typing-text');
     let content = '';
