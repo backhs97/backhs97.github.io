@@ -72,7 +72,7 @@ body {
     line-height: 1.5;
     font-size: 1.6rem; /* 16px */
     font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    cursor: none; /* 기본 커서 숨기기 */
+    cursor: none;
 }
 
 .container {
@@ -417,7 +417,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 이미지가 컨테이너를 채우도록 변경 */
+    object-fit: cover;
 }
 
 .work__title {
@@ -591,7 +591,6 @@ body {
     }
 }
 
-/* 코드 하이라이팅 스타일 */
 .contact__code-animation .comment { color: #6a9955; }
 .contact__code-animation .keyword { color: #569cd6; }
 .contact__code-animation .variable { color: #9cdcfe; }
@@ -699,7 +698,7 @@ body {
         height: 150px;
     }
     .work {
-        width: calc(50% - 1rem); /* 2개의 열, 간격 고려 */
+        width: calc(50% - 1rem);
     }
 }
 
@@ -716,7 +715,7 @@ body {
         font-size: 8rem;
     }
     .work{
-        width: calc(33.333% - 1.334rem); /* 3개의 열, 간격 고려 */
+        width: calc(33.333% - 1.334rem);
     }
     .contact__form{
         width: 40%;
@@ -1010,27 +1009,22 @@ body {
     color: #d4d4d4;
 }
 
-/* 주석 */
 #typing-text .comment {
     color: #6a9955;
 }
 
-/* 키워드 */
 #typing-text .keyword {
     color: #569cd6;
 }
 
-/* 문자열 */
 #typing-text .string {
     color: #ce9178;
 }
 
-/* 속성명 */
 #typing-text .property {
     color: #9cdcfe;
 }
 
-/* 괄호 */
 #typing-text .bracket {
     color: #d4d4d4;
 }
@@ -1062,7 +1056,6 @@ body {
 .project-image-container {
     position: relative;
     width: 100%;
-    /* 16:9 비율을 위한 패딩 설정 */
     padding-top: 56.25%;  /* (9/16) * 100% */
     background: #111111;
 }
@@ -1078,7 +1071,7 @@ body {
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;  /* 이미지 비율 유지 */
+    object-fit: contain;
     object-position: center;
 }
 
@@ -1113,10 +1106,9 @@ body {
     font-size: 0.875rem;
 }
 
-/* 반응형 디자인 */
 @media (max-width: 768px) {
     .project-image {
-        height: 180px;  /* 모바일에서 약간 더 작게 */
+        height: 180px; 
     }
 }
 
@@ -1220,7 +1212,6 @@ body {
     50% { opacity: 0; }
 }
 
-/* 커서 이펙트 스타일 */
 .cursor-effect {
     width: 300px;
     height: 300px;
@@ -1235,7 +1226,6 @@ body {
     filter: blur(50px);
 }
 
-/* 링크나 버튼에 호버했을 때 커서 이펙트 크기 변경 */
 a:hover ~ .cursor-effect,
 button:hover ~ .cursor-effect {
     transform: translate(-50%, -50%) scale(1.2);
@@ -1254,7 +1244,6 @@ button:hover ~ .cursor-effect {
     white-space: pre-wrap;
 }
 
-/* 코드 하이라이팅 */
 .contact__code-animation .cursor {
     display: inline-block;
     width: 8px;
@@ -1265,12 +1254,10 @@ button:hover ~ .cursor-effect {
     margin-left: 2px;
 }
 
-/* 배경 제거 및 코드 색상 스타일링 */
 #contact-typing-text {
     background: transparent;
 }
 
-/* 구문 강조 색상 */
 .comment { color: #6A9955; }
 .keyword { color: #569CD6; }
 .string { color: #CE9178; }
