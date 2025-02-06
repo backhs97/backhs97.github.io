@@ -72,7 +72,7 @@ body {
     line-height: 1.5;
     font-size: 1.6rem; /* 16px */
     font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    cursor: none;
+    cursor: auto;
 }
 
 .container {
