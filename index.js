@@ -296,11 +296,11 @@ const synczoneCommands = [
     },
     {
         command: 'cat project_info.txt',
-        output: 'Project: SyncZone\nTech Stack: React Native, Websocket, Agora, P2P, Node.js\nStatus: In Progress'
+        output: 'Project: SyncZone\nTech Stack: React Native, Websocket, Agora, P2P, Node.js\nStatus: Completed'
     },
     {
         command: 'open github_repo',
-        link: 'https://github.com/Boroshilov03/SyncZone'
+        link: 'https://github.com/backhs97/Synczone.git'
     }
 ];
 
