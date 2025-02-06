@@ -304,11 +304,32 @@ const synczoneCommands = [
     }
 ];
 
+const likelionusCommands = [
+    {
+        command: 'ls',
+        output: 'LikeLionUS/'
+    },
+    {
+        command: 'cd LikeLionUS',
+        output: null
+    },
+    {
+        command: 'cat project_info.txt',
+        output: 'Project: LikeLionUS\nTech Stack: Web Development Certificate\nStatus: Completed'
+    },
+    {
+        command: 'open certificate',
+        link: './assets/LLUS.pdf'
+    }
+];
+
 const autowiseTerminal = new TerminalAnimation('autowise-terminal', autowiseCommands);
 const synczoneTerminal = new TerminalAnimation('synczone-terminal', synczoneCommands);
+const likelionusTerminal = new TerminalAnimation('likelionus-terminal', likelionusCommands);
 
 autowiseTerminal.start();
 synczoneTerminal.start();
+likelionusTerminal.start();
 
 document.addEventListener('DOMContentLoaded', function() {
     const cursor = document.createElement('div');
