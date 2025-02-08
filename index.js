@@ -235,7 +235,7 @@ class TerminalAnimation {
         linkElement.href = link;
         linkElement.target = '_blank';
         linkElement.className = 'terminal-link';
-        linkElement.textContent = 'Opening project repository...';
+        linkElement.textContent = 'Opening project...';
         
         this.content.appendChild(linkElement);
         await this.typeCharacter('\n', 'output-text');
