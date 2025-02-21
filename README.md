@@ -73,9 +73,8 @@ The contact section combines traditional form elements:
 ---
 
 ## Stacks Used
-- HTML5
-- CSS3 (Custom animations and effects)
+- HTML
+- CSS (Custom animations and effects)
 - JavaScript
-- Intersection Observer API
 - Custom cursor tracking
 
