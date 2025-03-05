@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
         '    <span class="property">name</span>: <span class="string">"Jake"</span>,',
         '    <span class="property">title</span>: <span class="string">"Full Stack Developer"</span>,',
         '    <span class="property">languages</span>: [<span class="string">"JavaScript"</span>, <span class="string">"Python"</span>, <span class="string">"TypeScript"</span>,',
+        '    <span class="property">speak</span>: [<span class="string">"English"</span>, <span class="string">"Korean"</span>,',
         '    <span class="string">"HTML/CSS"</span>, <span class="string">"SQL"</span>, <span class="string">"Java"</span>, <span class="string">"C/C++"</span>, <span class="string">"C#"</span>],',
         '    <span class="property">tools</span>: [<span class="string">"Git"</span>, <span class="string">"GitHub"</span>, <span class="string">"AWS"</span>, <span class="string">"MongoDB"</span>, <span class="string">"PostgreSQL"</span>, <span class="string">"Linux"</span>,',
         '    <span class="string">"Docker Compose"</span>, <span class="string">"Jira"</span>, <span class="string">"Trello"</span>, <span class="string">"Supabase"</span>, <span class="string">"Websocket"</span>, <span class="string">"Agora"</span>, <span class="string">"Hume AI"</span>],',
